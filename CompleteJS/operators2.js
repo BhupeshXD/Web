@@ -138,7 +138,7 @@ var b =-10;
 // console.log(a);
 // console.log(b);
 
-
+ 
 // *******************interview question*************
 
 // Difference between == and === ?

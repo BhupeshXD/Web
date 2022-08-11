@@ -76,3 +76,4 @@ console.log(isNaN(NaN));  //because NaN is not a number and we are finding NaN s
 console.log(isNaN(Number.NaN)); //true because number is NaN
 
 console.log(Number.isNaN(NaN)); //true becasue number is true and it is not a number..
+
