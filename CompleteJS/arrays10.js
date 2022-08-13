@@ -2,7 +2,7 @@
 
 //traverse
 
-var names =["bhupesh","abhishek","rahul","rajesh"];
+// var names =["bhupesh","abhishek","rahul","rajesh"];
 // console.log(names[1]);
 
 
@@ -17,7 +17,7 @@ var names =["bhupesh","abhishek","rahul","rajesh"];
 
 // printing last element
 
-console.log(names[names.length-1]); // prints the last element
+// console.log(names[names.length-1]); // prints the last element
 
 // es6
 
@@ -29,8 +29,22 @@ console.log(names[names.length-1]); // prints the last element
 
 // for of loop 
 
-for(let elements of names) {
-    console.log(elements);
-}
+// for(let elements of names) {
+//     console.log(elements);
+// }
+
+// array.prototype.forEach()
+//calls a function for each element in the array.
+
+var friends = ['bhupesh','dhapola','ranbeer','siddharth','hrithik'];
+// friends.forEach(function(element, index, array){
+//     console.log(element + " index : "+ index + " " + array);  
+// });
+
+// friends.forEach((element, index, array) => {
+//     console.log(element + " index : "+ index + " " + array);  
+// });
 
 
+
+// ******** searching and filter in an array************

@@ -1,2 +1,1 @@
-
-//  var a = 'rain';
+var names =["bhupesh","abhishek","rahul","rajesh"];
