@@ -120,6 +120,8 @@
 // *************CRUD in Array***********
 // create read update delete
 
+// Addition in array
+
 // push()
 
 // push() method adds one or more elements to the end of an array and returns the new length of  the array
@@ -129,12 +131,169 @@
 // // animals.push('tiger');
 // // console.log(animals); 
 
-// animals.push('chicken','cow','sheep'); // can also add mpre than 1
+// animals.push('chicken','cow','sheep'); // can also add more than 1
 // console.log(animals); 
+
+
+
 
 //unshift()
 
-const animalzzz = ['cat', 'dog', 'rabbit', 'horze'];
-const count = animals.unshift('cow');
-console.log(count);
-console.log(animalzzz);
+// add at beginning of array
+// and returns the length of the array
+
+// eg1 
+
+// const animalzzz = ['cat', 'dog', 'rabbit','horze'];
+// // const count = animalzzz.unshift('cow');
+// const count = animalzzz.unshift('cow','crow','rat');
+// console.log(count);
+// console.log(animalzzz);
+
+// eg2
+
+// const myNumbers = [1,2,3,4,5,6,7,8,9,10];
+// // console.log(myNumbers.unshift(60,40)); //ONLY length GOT RETURNS
+// myNumbers.unshift(60,40);
+// console.log(myNumbers); //now array will print in beggining..
+
+// Deletetion in array
+
+// pop()
+
+// removes the last element from the array
+
+// const plants = ['cauliflower','brinjal','carrot','tomato','potato'];
+
+// console.log(plants);
+// console.log(plants.pop());
+// console.log(plants);
+
+// shift()
+
+// remove element from begnning of array
+
+// const plants1 = ['cauliflower','brinjal','carrot','tomato','potato'];
+
+// console.log(plants1);
+// console.log(plants1.shift());
+// console.log(plants1);
+
+// Challenge time 
+
+
+//splice()
+// add delete update in one method
+// mostly used in deletion 
+
+
+// 1. add dec the end of the month Array
+
+// const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May'];
+
+// // const newmethod = months.splice(5,0,'Dec');
+
+// const newmethod = months.splice(months.length,0,'Dec'); // months.length autmatically added checks the length and adds at the end
+// console.log(months);
+
+
+// sol 2 :
+
+// UPADTE MAR TO MARCH USING SPICE()
+
+// const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May'];
+// const indexmonth = months.indexOf('Mar');
+// if(indexmonth !== -1) {
+//     const upadtemonth = months.splice(indexmonth,1,'March'); 
+//     console.log(months); 
+// }else{
+//     console.log("no such element present");
+// }
+
+
+// SOL 3
+
+// delete mar from array 
+
+
+// const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May'];
+// const indexmonth = months.indexOf('Mar');
+// if(indexmonth !== -1) {
+//     const upadtemonth = months.splice(indexmonth,1); 
+//     console.log(months); 
+//     console.log(upadtemonth);
+// }else{
+//     console.log("no such element present");
+// }
+
+
+// ...............most important............
+
+// Map() Reduce() filer()
+
+
+// Map()
+// Returns a new array containing the results of the calling function on every element in the array.
+
+// syntax : 
+// // let newarray = array.map(callback(currentvalue[,index[,array]]{
+// });
+// returns Element for newArray, after executing something
+
+
+
+// const array = [3,4,6,7,8,9,22,32,23,88];
+// //num>9
+
+// let newArray = array.map((currElm, index,arr) => {
+//     return currElm>9;
+// });
+// console.log(array);
+// console.log(newArray);
+
+// let newArr = array.map((currelmt,index,arr) =>{
+//     return `Index no = ${index} and the value is ${currelmt} belong to ${arr}`
+// })
+// console.log(newArr);
+
+//it returns new array with out mutauting the original array
+
+// difference between map and for each
+
+// for each returns undefined
+
+
+
+
+//challenge time
+
+// find sqr root in array?
+
+// let arr = [25,36,49,64,81];
+
+// // 1. let arrSqr = arr.map((currElment)=> {
+// //     return Math.sqrt(currElment);
+// // })
+
+// // 2. you can reduce code by writing in same line 
+// let arrSqr = arr.map((currElment)=>Math.sqrt(currElment))
+// console.log(arrSqr);
+
+
+// Q2. multiply each Element by 2 and return only those Element which are greater than 10?
+
+// sol 1
+
+// let arr = [2,3,4,6,8];
+// let grtar =arr.map((currElment)=>{
+//     return currElment*2
+// }).filter((currElment)=>{
+//     return currElment > 10 ;
+// });
+// console.log(grtar);
+
+// sol 2
+
+// let grtarr = arr.map((currElment)=> currElment*2).filter((currElment)=> currElment > 10)
+// console.log(grtarr);
+
