@@ -82,7 +82,7 @@
 
 // if find() and findIndex() both doesnt satisfy the value then they return undefined and -1
 
-// filter()
+// *************************** filter()***************************
 
 // returns a new array containing all Elements of the calling array for which the provided filtering function returns true
 // const prices = [200,300,500,700,600,150,350,400]
@@ -280,7 +280,7 @@
 // console.log(arrSqr);
 
 
-// Q2. multiply each Element by 2 and return only those Element which are greater than 10?
+// Q2. multiply each Element by 2 and return only those Element which are greater than 10 and also sum the final array which is greater than 10?
 
 // sol 1
 
@@ -294,6 +294,43 @@
 
 // sol 2
 
-// let grtarr = arr.map((currElment)=> currElment*2).filter((currElment)=> currElment > 10)
+// let grtarr = arr.map((currElment)=> currElment*2).filter((currElment)=> currElment > 10).reduce((accumulator,currElm)=>{
+//     return accumulator * currElm;
+// })
 // console.log(grtarr);
 
+
+// **********************reduce method ()******************************
+
+// flatten an array to convert 3d or 2d array to single dimensional array
+
+// to reduce() method a reducer function (that you provide) on each element of the array, resulting in single output value.
+
+// the reducer function takes four arguments:
+
+// Accumulator: works as container
+// Current Value
+// Current Index
+// Source Array
+
+// let arr1 = [5,6,2];
+
+// let sum = arr1.reduce((accumulator,currElm , index, arr)=>{
+//     return accumulator + currElm;
+// },7)  // 7 is initial value
+// console.log(sum);
+
+// how to flaten an array ?
+//converting 2d and 3d array into one dimensional array.
+
+const arr = [
+    ['zone1' , 'zone2'],
+    ['zone3' , 'zone4'],
+    ['zone5', 'zone6'],
+    ['zone7', 'zone8'],
+];
+
+let flatArr = arr.reduce((accu,currval)=>{
+    return accu.concat(currval);
+})
+console.log(flatArr);
