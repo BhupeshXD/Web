@@ -1,1 +1,1 @@
-let grtarr = arr.map((currElment)=> currElment*2).filter((currElment)=> currElment > 10)
+let res = str.substring(0,4);
