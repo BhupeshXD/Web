@@ -1,1 +1,1 @@
-let res = str.substring(0,4);
+console.log(str.substr(-4));

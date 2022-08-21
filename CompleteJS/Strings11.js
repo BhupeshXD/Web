@@ -134,8 +134,15 @@
 // difference is that the second paramenter specifies the length of extracted part.
 
 var str ="apple, bananna, kiwi";
-let res = str.substr(7,-2 );
-console.log(res);
+// let res = str.substr(7,-2 );
+// console.log(res);
+
+// console.log(str.substr(-2));
+
+
+
+
+//********Replacing String Content******** */
 
 
 
