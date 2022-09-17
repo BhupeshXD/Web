@@ -14,8 +14,92 @@
     <div class="child-two">
         <p>I am child-two</p>
     </div>
-    <div class="child-three">
+    <h1 id="child-three">
         <p>I am third-one</p>
-    </div>
+   </h1>
+
+
+    <button onclick="changeContent()">CLick Me</button>
+
+    <script>
+        // const changeContent = () => {
+        //     document.getElementById("child-three").innerHTML="Welcome the Thapa Technical"
+            
+
+        // by taking the reference headline is the object here
+
+            const headingchange = document.getElementById("child-three");
+            headingchange.innerHTML="Welcome Bhupesh";
+
+            console.log(getElementsByClassName("child-one"));
+
+            console.log(getElementsByTagName("child-two"));
+    </script>
 </body>
 </html>
+
+<!-- elements taht has child node
+
+document.body.hasChildNodes()
+
+Practice time
+
+how to find child in Dom tree?
+
+document.body.children
+
+document.body.firstChild // this will include all whitescape and text too
+// if dont wwant anyrhing and direct child element than
+
+document.body.firstElementChild // main div part
+
+can go more further by
+document.body.firstElementChild.firstElementChild
+
+
+const childTwo = document.querySelector('.child-two');
+childTwo
+
+childTwo.style.color = 'white';
+
+
+
+
+
+
+//  for finding parent now
+
+
+document.body.parentNode
+html is the parent of body
+
+
+document.body.parentElement
+//html is there parent
+
+document.head.parentElement
+// op will be same html
+
+
+/// finding sibling in html document
+
+sibling of body
+
+document.body.nextSibling
+// null 
+because first come head than body and we dont have any siblig next to body
+
+document.body.previousSibling
+// text
+head part will be come as #text
+
+document.body.previousElementSibling
+// head tag
+direct element will be printed 
+
+
+
+
+//similar will happen with head to if we replaced the document.body.nextSibling to document.head.nextSibling
+ 
+ 
